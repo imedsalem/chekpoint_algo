@@ -1,0 +1,22 @@
+ALGORITHM chekpoint_algo
+VAR
+    INTEGER nbr_char :=0, nbr_word :=1, nbr_V :=0
+    CHAR char_test :=""
+
+BEGIN
+    WHILE (char_test != ".") DO
+    Write ("donner un caractere")
+    Read (char_test)
+    nbr_word++
+    IF (char_test = " ") THEN
+        nbr_word++
+    END_IF
+    IF (char_test ="a" or char_test ="e" or char_test ="i" or char_test ="o" or char_test ="u" 
+        or char_test ="A" or char_test ="E" or char_test ="I" or char_test ="O" or char_test ="U") THEN
+        nbr_V++
+    END_IF
+    END_WHILE
+    Write ("la longueur de cette phrase est est" + nbr_char)
+    Write ("le(s) nombre(s) de(s) mot(s) dans cette phrase est" + nbr_word)
+    Write ("le(s) nombre(s) de(s) voyelle(s) dans cette phrase est" + nbr_char)
+END
